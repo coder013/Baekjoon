@@ -11,14 +11,17 @@ public class Q10872 {
             StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
 
             int number = Integer.parseInt(stringTokenizer.nextToken());
-            int result = 1;
 
-            for (int i = 2; i <= number; i++) {
-                result = result * i;
-            }
-
-            System.out.println(result);
+            System.out.println(getFactorial(number));
         } catch(Exception e) {
         }
+    }
+
+    private static int getFactorial(int number) {
+        if (number < 2) {
+            return 1;
+        }
+
+        return number * getFactorial(number - 1);
     }
 }
