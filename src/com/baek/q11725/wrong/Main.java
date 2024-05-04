@@ -1,4 +1,4 @@
-package com.baek.Q11725.wrong;
+package com.baek.q11725.wrong;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
